@@ -2,11 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import PageRouter from './page/'
 import ViewsRouter from './view/'
-//  import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
-
-//  const _import = require('./_import')
 
 export default new Router({
   scrollBehavior: () => ({
@@ -14,5 +11,4 @@ export default new Router({
   }),
   routes: []
 })
-
 export const asyncRouterMap = [].concat(PageRouter, ViewsRouter)
