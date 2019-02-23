@@ -6,17 +6,19 @@
         status-icon
         :rules="rules"
         label-width="100px"
-        ref="accountInfo"
         class="demo-ruleForm"
       >
         <el-form-item label="账号" prop="account">
-          <el-input v-model="accountInfo.account" autocomplete="off"></el-input>
+          <el-input type="password" v-model="accountInfo.account" autocomplete="off"></el-input>
         </el-form-item>
         <el-form-item label="密码" prop="password">
           <el-input type="password" v-model="accountInfo.password" autocomplete="off"></el-input>
         </el-form-item>
+        <el-form-item label="确认密码" prop="checkPass">
+          <el-input type="password" v-model="accountInfo.checkPass" autocomplete="off"></el-input>
+        </el-form-item>
         <el-form-item>
-          <el-button type="primary" @click="submitForm('accountInfo')">登陆</el-button>
+          <el-button type="primary" @click="submitForm('accountInfo')">提交</el-button>
           <el-button @click="resetForm('accountInfo')">重置</el-button>
         </el-form-item>
       </el-form>
@@ -26,33 +28,16 @@
 
 <script>
 export default {
-  name: 'log',
+  name: 'login',
   data () {
     return {
-      accountInfo: {
-        account: '',
-        password: ''
-      },
-      rules: {
-        account: [{ required: true, message: '请输入账号', trigger: 'blur' }],
-        password: [{ required: true, message: '请输入密码', trigger: 'blur' }]
-      },
-      msg: ''
+      accountInfo: {},
+      msg: '123'
     }
   },
   methods: {
-    submitForm (refName) {
-      this.$refs[refName].validate(vaild => {
-        if (vaild) {
-          this.$api.post('login', this.accountInfo, res => {
-            console.log(res)
-          })
-        }
-      })
-    },
-    resetForm (refName) {
-      this.$refs[refName].resetFields()
-    }
+    submitForm () {},
+    resetForm () {}
   }
 }
 </script>
