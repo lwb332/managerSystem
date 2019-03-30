@@ -25,13 +25,20 @@
 </template>
 
 <script>
+import Login from '@/api/public/index'
 export default {
   name: 'log',
   data () {
     return {
       accountInfo: {
         account: '',
-        password: ''
+        password: '',
+        Comlist: [
+          {id:1,label:1,value1:'value',value:''},
+          {id:2,label:2,value1:'value',value:''},
+          {id:4,label:4,value1:'value',value:''},
+          {id:3,label:3,value1:'value',value:''}
+        ]
       },
       rules: {
         account: [{ required: true, message: '请输入账号', trigger: 'blur' }],
@@ -44,8 +51,9 @@ export default {
     submitForm (refName) {
       this.$refs[refName].validate(vaild => {
         if (vaild) {
-          this.$api.post('login', this.accountInfo, res => {
-            console.log(res)
+          const login = new Login()
+          login.login(this.accountInfo).then(res => {
+            alert(res.message)
           })
         }
       })
