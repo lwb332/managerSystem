@@ -1,0 +1,41 @@
+
+
+html{
+  font-size: 12px;
+  font-family: -apple-system,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Arial,sans-serif;
+  text-rendering: optimizeLegibility;
+  color: #333;
+  background-color: #f4f5f5;
+}
+
+body {
+  background-color: #eee;
+  font-size: 12px
+}
+
+ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+img{
+  width: auto;
+  height: auto;
+  border-style: none
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color: #909090;
+  margin: initial;
+}

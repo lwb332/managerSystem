@@ -1,0 +1,125 @@
+list{
+  text-decoration: none
+}
+
+.main-header{
+  transform: translateZ(0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all .2s;
+  background: #fff;
+  border-bottom: 1px solid #f1f1f1;
+  color: #909090;
+  height: 5rem;
+  z-index: 250;
+}
+
+.header-list{
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center
+}
+
+.nav-list{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  height: 100%;
+  margin: 0
+}
+
+.nav-item{
+  color: #71777c;
+  padding: 0 1.2rem;
+  font-size: 1.33rem;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-item.search {
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  cursor: auto;
+}
+
+.search-form{
+  border: 1px solid hsla(0,0%,59.2%,.2);
+  background-color: rgba(227,231,236,.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2px;
+}
+
+.search-input{
+  border: none;
+  width: 8rem;
+  padding: .6rem 1rem;
+  box-shadow: none;
+  outline: none;
+  font-size: 1.1rem;
+  color: #666;
+  background-color: transparent;
+}
+
+.search-icon{
+  padding: 0 .5rem;
+  cursor: pointer;
+}
+
+.nav-item .icon {
+  font-size: 2rem;
+  color: #71777c;
+}
+
+.ion-android-notifications::before {
+  content: "\f39b";
+}
+
+.nav-list-value{
+  padding: 0 1.6rem;
+  height: 5rem;
+  color: #71777c;
+  font-size: 1.33rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  position: relative;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #eee;
+}
+
+.logo{
+  min-width: 98px;
+  margin-right: 2rem;
+}
+
+.active-class{
+  color: #007fff;
+}
+
+.active{
+  border-color: #007fff
+}

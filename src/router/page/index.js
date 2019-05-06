@@ -3,19 +3,42 @@ const _import = require('../_import')
 
 export default [{
   path: '/',
-  name: '首页',
-  redirect: '/login'
-}, {
+  name: '欢迎',
+  redirect: '/wel'
+},{
+  path: '/wel',
+  name: '主页',
+  components: _import('index'),
+  redirect: '/wel/index',
+  children: [
+    {  
+      path: 'index',
+      name: '首页',
+      components: _import('index/index')
+    },
+    {
+      path: 'activities',
+      name: '动态',
+      components: _import('index/activities')
+    },
+    {  
+      path: 'topics',
+      name: '话题',
+      components: _import('index/topics')
+    },
+    {  
+      path: 'books',
+      name: '小册',
+      components: _import('index/books')
+    },
+    {  
+      path: 'all',
+      name: '活动',
+      components: _import('index/all')
+    },
+  ]
+},{
   path: '/login',
   name: '登陆',
-  components: _import('login/index')
-}, {
-  path: '/wel',
-  redirect: '/wel/index',
-  components: Layout,
-  children: [{
-    path: '/index',
-    name: '个人首页',
-    components: _import('index')
-  }]
+  component: _import('login/index')
 }]

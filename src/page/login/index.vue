@@ -33,12 +33,6 @@ export default {
       accountInfo: {
         account: '',
         password: '',
-        Comlist: [
-          {id:1,label:1,value1:'value',value:''},
-          {id:2,label:2,value1:'value',value:''},
-          {id:4,label:4,value1:'value',value:''},
-          {id:3,label:3,value1:'value',value:''}
-        ]
       },
       rules: {
         account: [{ required: true, message: '请输入账号', trigger: 'blur' }],
@@ -66,7 +60,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang='scss'>
+@import '../../assets/index.scss';
 .main-card {
   width: 400px;
   margin: 0 auto;
