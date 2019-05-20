@@ -17,7 +17,7 @@ export default {
     this.initEvent()
   },
   methods: {
-    initEvent() {debugger
+    initEvent() {
       let { trigger, show, hide, handleClick, splitButton, handleTriggerKeyDown, handleItemKeyDown } = this
       this.triggerElm = splitButton
         ? this.$refs.trigger.$el

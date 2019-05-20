@@ -34,7 +34,8 @@ export default [{
     {  
       path: 'all',
       name: '活动',
-      components: _import('index/all')
+      components: _import('index/all'),
+      meta: {keepAlive: true}
     },
   ]
 },{

@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <input type="text">
     <p>activities</p>
     <p>activities</p>
     <p>activities</p>

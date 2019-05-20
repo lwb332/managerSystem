@@ -3,7 +3,7 @@
     <header class="main-header">
       <div class="header-list">
         <router-link to="/wel/index" class="logo">
-          <img src="../assets/logo.svg" alt="vue">
+          <!-- <img src="../assets/logo.svg" alt="vue"> -->
         </router-link>
         <nav class="main-nav">
           <ul class="nav-list">
@@ -52,14 +52,14 @@
     </header>
 
     <!-- 组件测试区域 start-->
-    <i-dropdown>
+    <!-- <i-dropdown>
       <div data-src="https://user-gold-cdn.xitu.io/2019/1/2/1680e0219988700e?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1" class="lazy avatar avatar loaded immediate el-dropdown-link" style="background-image: url('https://user-gold-cdn.xitu.io/2019/1/2/1680e0219988700e?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1')"></div>
                 
       <i-dropdown-menu slot="dropdown">
         <i-dropdown-item>已购小册</i-dropdown-item>
         <i-dropdown-item>我的关注</i-dropdown-item>
       </i-dropdown-menu>
-    </i-dropdown>
+    </i-dropdown> -->
     <!-- 组件测试区域 end-->
 
 
